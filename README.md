@@ -1,6 +1,6 @@
 # Final Project
 
-Your Name, yourcontact@ucsd.edu
+Kasidech Tantipanichaphan, ktantipa@ucsd.edu
 
 (Your teammates' contact info, if appropriate)
 
