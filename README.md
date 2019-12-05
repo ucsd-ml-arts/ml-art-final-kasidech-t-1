@@ -8,6 +8,8 @@ Kasidech Tantipanichaphan, ktantipa@ucsd.edu
 
 FIRST STEP: Write up a description (in the form of an abstract) of what you will revisit for your final project. This should be one paragraph clearly describing your concept and approach. What are your desired creative goals? How are you expanding on something we covered in the class? How will you present your work next Wednesday in the final project presentations? 
 
+The concept/goal of this project is to gather what we’ve learned in the past and to help formulate a more efficient way in producing a facial composite of the criminal. There are a couple of methods that I decided to use. The first element is to produce text to face. The idea is to transcribe the victim’s description of the criminal to facial image. In this method, I will transcribe the given text and turn into a face of the person as much as possible. In this, I will be using StackGAN and ProGAN to complete this portion of implementation. Another element is using the CycleGAN to produce a better face composition of the criminal from the police sketches. Maybe the criminal face could not be thoroughly visualize. The CycleGAN will select a new loss function to generate more sharp and realistic images. 
+
 ## Project Report
 
 Upload your project report (4 pages) as a pdf with your repository, following this template: [google docs](https://drive.google.com/open?id=1mgIxwX1VseLyeM9uPSv5GJQgRWNFqtBZ0GKE9d4Qxww).
