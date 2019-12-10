@@ -22,7 +22,7 @@ There are three main datasets that I used for the first part of the project: FER
 
 ## Code
 
-The code is in this Github.
+The codes are in this Github.
 
 ## Results
 
