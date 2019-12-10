@@ -2,8 +2,6 @@
 
 Kasidech Tantipanichaphan, ktantipa@ucsd.edu
 
-(Your teammates' contact info, if appropriate)
-
 <img src="https://github.com/ucsd-ml-arts/ml-art-final-kasidech-t-1/blob/master/Images/Cover.png" width="50%">
 
 ## Abstract
