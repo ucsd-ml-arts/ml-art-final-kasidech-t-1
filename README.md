@@ -4,9 +4,9 @@ Kasidech Tantipanichaphan, ktantipa@ucsd.edu
 
 (Your teammates' contact info, if appropriate)
 
-## Abstract
+<img src="https://github.com/ucsd-ml-arts/ml-art-final-kasidech-t-1/blob/master/Images/Cover.png" width="50%">
 
-FIRST STEP: Write up a description (in the form of an abstract) of what you will revisit for your final project. This should be one paragraph clearly describing your concept and approach. What are your desired creative goals? How are you expanding on something we covered in the class? How will you present your work next Wednesday in the final project presentations? 
+## Abstract
 
 Nowadays, police sketches are nevertheless a routine part of law enforcement investigations. In other words, visualization plays an important role important towards the criminal investigation. Because the picture of the criminal is not available, this requires us to draw a brief sketch. Clearly, this is not enough for the officers to speculate. Notice that sometimes we cannot clearly visualize the image of the criminal by the sketch that the sketch-artist has drawn. According to the Physical Security statistics, some researchers suggest that facial sketches or composite pictures of suspected criminals are useful less than 20% of the time. Other studies put the percentage even lower – maybe as low as 8%. That means that at least 80% of the time, the time and effort spent creating and circulating these pictures are worthless.
 
@@ -26,6 +26,33 @@ The code is in this Github.
 
 ## Results
 
+#### Sketch-to-face results (Method 1)
+
+Example using Feret Dataset
+
+<img src="https://github.com/ucsd-ml-arts/ml-art-final-kasidech-t-1/blob/master/Images/sketch2face.png" width="50%">
+
+Example using MUCT Face Database
+
+<img src="https://github.com/ucsd-ml-arts/ml-art-final-kasidech-t-1/blob/master/Images/sketch2face_1.png" width="50%">
+
+#### Text-to-face results (Method 2)
+
+*Example from Timely Report Crime Email*
+
+<img src="https://github.com/ucsd-ml-arts/ml-art-final-kasidech-t-1/blob/master/Images/text2face_1.png" width="100%">
+
+Input strings:
+
+<img src="https://github.com/ucsd-ml-arts/ml-art-final-kasidech-t-1/blob/master/Images/text2face_2.png" width="90%">
+
+Generated result:
+
+<img src="https://github.com/ucsd-ml-arts/ml-art-final-kasidech-t-1/blob/master/Images/text2face_5.png" width="75%">
+
+*More Generated Examples*
+
+<img src="https://github.com/ucsd-ml-arts/ml-art-final-kasidech-t-1/blob/master/Images/text2face.png" width="90%">
 
 
 ## Technical Notes
@@ -43,3 +70,5 @@ The second part of the project, I use StackGAN and ProGAN to synthesize faces fr
 [2] StackGAN: https://github.com/hanzhanggit/StackGAN
 
 [3] ProGAN: https://github.com/akanimax/pro_gan_pytorch
+
+[4] T2F: https://github.com/akanimax/T2F
