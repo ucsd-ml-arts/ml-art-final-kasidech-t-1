@@ -52,6 +52,8 @@ Generated result:
 
 *More Generated Examples*
 
+I include the relevant informations such as their race, age, gender, hairstyles, and some of them I also include the emotion as well. And below are my generated outputs based on the input strings. 
+
 <img src="https://github.com/ucsd-ml-arts/ml-art-final-kasidech-t-1/blob/master/Images/text2face.png" width="90%">
 
 
