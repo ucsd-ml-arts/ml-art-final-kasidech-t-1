@@ -4,45 +4,40 @@ Kasidech Tantipanichaphan, ktantipa@ucsd.edu
 
 (Your teammates' contact info, if appropriate)
 
-## Abstract Proposal
+## Abstract
 
 FIRST STEP: Write up a description (in the form of an abstract) of what you will revisit for your final project. This should be one paragraph clearly describing your concept and approach. What are your desired creative goals? How are you expanding on something we covered in the class? How will you present your work next Wednesday in the final project presentations? 
 
+Nowadays, police sketches are nevertheless a routine part of law enforcement investigations. In other words, visualization plays an important role important towards the criminal investigation. Because the picture of the criminal is not available, this requires us to draw a brief sketch. Clearly, this is not enough for the officers to speculate. Notice that sometimes we cannot clearly visualize the image of the criminal by the sketch that the sketch-artist has drawn. According to the Physical Security statistics, some researchers suggest that facial sketches or composite pictures of suspected criminals are useful less than 20% of the time. Other studies put the percentage even lower – maybe as low as 8%. That means that at least 80% of the time, the time and effort spent creating and circulating these pictures are worthless.
+
+The goal of this project is to gather what we’ve explored in the context of this class and to help formulate a more efficient way in producing a facial composite of the criminal. There are two methods that I decided to use. The first method is using the CycleGAN to produce a better face composition of the criminal from the police sketches. Maybe the criminal face could not be thoroughly visualized. The CycleGAN will select a new loss function to generate more sharp and realistic images. Another element is to produce text to face the result. The idea is to use StackGAN and ProGAN to synthesize faces of the criminal based on the textual description from the victim. The reason why is because sometimes it takes time to sketch the faces of the criminal based on the victim’s description. By using machines to generate the face could be an efficient way of doing so. The presentation on Wednesday will be present in the form of powerpoint.
+
 ## Project Report
 
-Upload your project report (4 pages) as a pdf with your repository, following this template: [google docs](https://drive.google.com/open?id=1mgIxwX1VseLyeM9uPSv5GJQgRWNFqtBZ0GKE9d4Qxww).
+The Project Report is in this github.
 
 ## Model/Data
 
-Briefly describe the files that are included with your repository:
-- trained models
-- training data (or link to training data)
+There are three main datasets that I used for the first part of the project: FERET dataset, CUHK dataset, and MUCT Face database. According to the website, FERET database is a dataset used for facial recognition system evaluation as part of the Face Recognition Technology (FERET) program. The database contains a total of ~14,125 images pertaining to 1199 individuals along with 365 duplicate sets of images that were taken on a different day. The FERET dataset is needed to be requested from the National Institute of Standards and Technology (.gov) website. Similarly, the MUCT Face database also contains lots of people's faces, with the exception that it contains color images instead of gray-scale. Another dataset that I use is called CUHK Face Sketch dataset. Basically, this dataset is for research on face sketch synthesis. This includes 1194 persons, with different lighting variation and a sketch with shape exaggeration drawn by an artist. The second part of the project I use Face2Text dataset (however this project is performing a reverse) which contains 400 facial images and textual captions for each of them. 
 
 ## Code
 
-Your code for generating your project:
-- Python: generative_code.py
-- Jupyter notebooks: generative_code.ipynb
+The code is in this Github.
 
 ## Results
 
-Documentation of your results in an appropriate format, both links to files and a brief description of their contents:
-- What you include here will very much depend on the format of your final project
-  - image files (`.jpg`, `.png` or whatever else is appropriate)
-  - 3d models
-  - movie files (uploaded to youtube or vimeo due to github file size limits)
-  - audio files
-  - ... some other form
+
 
 ## Technical Notes
 
-Any implementation details or notes we need to repeat your work. 
-- Does this code require other pip packages, software, etc?
-- Does it run on some other (non-datahub) platform? (CoLab, etc.)
+There are two parts for my project, sketch-to-face and text-to-face. There are three techniques that I decided to use: StackGAN, ProGAN, and CycleGAN. In this implementation, I use the CycleGAN model to generate the results. After we got the FERET and CUHK dataset. It is time to use cycleGAN to train these images. The trainA is the sketches images from CUHK dataset and the trainB is the actual face images from FERET dataset. Adding more images, the data becomes more and more accurate (roughly about 1000+). During the experiment, I adjusted several parameters as well as the number of epochs. The epochs that are greater 100 achieve more satisfying results. The cycle took about 2-3 hours to achieve the best result.
+
+The second part of the project, I use StackGAN and ProGAN to synthesize faces from textual descriptions. This process took 3-4 hours to train the model. This process requires PyTorch framework. For this part of the project, I installed *PyTorch version 0.4.0*. What I did was that I generated the StackGAN which sketches the primitive shape and colors of the object based on the given textual description. The textual description is encoded into a summary vector using an LSTM network. Along with StackGAN, I also use ProGAN. To explain the concept of ProGAN, it has two networks, which are generator and discriminator. The generator creates “fakes”, and the discriminator attempts to distinguish these “fake” samples from the “real” ones. Both networks start out performing quite poorly at their tasks, but when training goes well, they improve in tandem until the generator is producing convincing fakes. This was used to both kind of speed the training up as well as stabilize it. 
+
 
 ## Reference
 
-References to any papers, techniques, repositories you used:
-- Papers
-- Repositories
-- Blog posts
+
+CycleGAN: https://junyanz.github.io/CycleGAN/
+StackGAN: https://github.com/hanzhanggit/StackGAN
+ProGAN: https://github.com/akanimax/pro_gan_pytorch
