@@ -38,6 +38,8 @@ The second part of the project, I use StackGAN and ProGAN to synthesize faces fr
 ## Reference
 
 
-CycleGAN: https://junyanz.github.io/CycleGAN/
-StackGAN: https://github.com/hanzhanggit/StackGAN
-ProGAN: https://github.com/akanimax/pro_gan_pytorch
+[1] CycleGAN: https://junyanz.github.io/CycleGAN/
+
+[2] StackGAN: https://github.com/hanzhanggit/StackGAN
+
+[3] ProGAN: https://github.com/akanimax/pro_gan_pytorch
