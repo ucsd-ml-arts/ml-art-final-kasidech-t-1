@@ -36,7 +36,7 @@ Example using MUCT Face Database
 <img src="https://github.com/ucsd-ml-arts/ml-art-final-kasidech-t-1/blob/master/Images/sketch2face_1.png" width="50%">
 
 #### Text-to-face results (Method 2)
-Synthesize the face of the criminal based on the textual description from the victims.
+Synthesize the face of the criminal based on the textual description given by the victims.
 
 *Example from UCSD Timely Report Crime Email*
 
