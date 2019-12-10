@@ -30,7 +30,7 @@ The code is in this Github.
 
 Example using Feret Dataset
 
-<img src="https://github.com/ucsd-ml-arts/ml-art-final-kasidech-t-1/blob/master/Images/sketch2face.png" width="50%">
+<img src="https://github.com/ucsd-ml-arts/ml-art-final-kasidech-t-1/blob/master/Images/sketch2face.png" width="70%">
 
 Example using MUCT Face Database
 
