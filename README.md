@@ -71,4 +71,3 @@ The second part of the project, I use StackGAN and ProGAN to synthesize faces fr
 
 [3] ProGAN: https://github.com/akanimax/pro_gan_pytorch
 
-[4] T2F: https://github.com/akanimax/T2F
