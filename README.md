@@ -25,6 +25,7 @@ The codes are in this Github.
 ## Results
 
 #### Sketch-to-face results (Method 1)
+Translating police face sketch into actual face of the criminal as much as possible.
 
 Example using Feret Dataset
 
@@ -35,6 +36,7 @@ Example using MUCT Face Database
 <img src="https://github.com/ucsd-ml-arts/ml-art-final-kasidech-t-1/blob/master/Images/sketch2face_1.png" width="50%">
 
 #### Text-to-face results (Method 2)
+Synthesize the face of the criminal based on the textual description from the victims.
 
 *Example from UCSD Timely Report Crime Email*
 
