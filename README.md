@@ -38,7 +38,7 @@ Example using MUCT Face Database
 
 #### Text-to-face results (Method 2)
 
-*Example from Timely Report Crime Email*
+*Example from UCSD Timely Report Crime Email*
 
 <img src="https://github.com/ucsd-ml-arts/ml-art-final-kasidech-t-1/blob/master/Images/text2face_1.png" width="100%">
 
