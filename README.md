@@ -63,6 +63,9 @@ There are two parts for my project, sketch-to-face and text-to-face. There are t
 
 The second part of the project, I use StackGAN and ProGAN to synthesize faces from textual descriptions. This process took 3-4 hours to train the model. This process requires PyTorch framework. For this part of the project, I installed *PyTorch version 0.4.0*. What I did was that I generated the StackGAN which sketches the primitive shape and colors of the object based on the given textual description. The textual description is encoded into a summary vector using an LSTM network. Along with StackGAN, I also use ProGAN. To explain the concept of ProGAN, it has two networks, which are generator and discriminator. The generator creates “fakes”, and the discriminator attempts to distinguish these “fake” samples from the “real” ones. Both networks start out performing quite poorly at their tasks, but when training goes well, they improve in tandem until the generator is producing convincing fakes. This was used to both kind of speed the training up as well as stabilize it. 
 
+## Conclusion
+
+In conclusion, if there’s a future opportunity for this type of project, I would definitely want to improve more on it since the time span that we currently have to complete the project is quite limited. However, this is to give an idea how we could use these GAN(s) to generate the face of the criminal in multiple ways. Overall, this class has taught me a lot about how machine learning could be fun as well as creative. We often see concepts such as object detection, facial recognition, random prediction, etc. However, this class has shown that we could create something that is more than these general concepts.
 
 ## Reference
 
